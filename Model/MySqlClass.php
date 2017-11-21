@@ -12,11 +12,29 @@
             return mysqli_query($this->connection, $query);
         }
 
-        public function selectWhere($table, $column, $value, $atribute){
+        public function IsertIdentificacao($boxColor, $id, $local, $data, $hora, $materiais, $nome, $cpf, $telefone){
+            $query = "insert into identificacao (boxColor, id, local, data, hora, materiais, nome, cpf, telefone) values('{$boxColor}', '{$id}', '{$local}', '{$data}', '{$hora}', '{$materiais}', '{$nome}', '{$cpf}', '{$telefone}')";
+            return mysqli_query($this->connection, $query);
+        }
+
+        public function selectWhere($atribute, $table, $column, $value){
             $query = "select {$atribute} from {$table} where {$column} = {$value}";
             $result = mysqli_query($this->connection, $query);
             if($result){
                 return mysqli_fetch_assoc($result);
+            }
+        }
+
+        public function selectWhereArray($atribute, $table, $column, $value){
+            $select = array();
+            $query = "select {$atribute} from {$table} where {$column} = '{$value}'";
+            $result = mysqli_query($this->connection, $query);
+            if($result){
+                $select = array();
+                while($line = mysqli_fetch_assoc($result)){
+                    $select[] = $line;
+                }
+                return $select;
             }
         }
 

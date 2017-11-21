@@ -6,7 +6,7 @@
     $sql = new MySql();
 
     if(isset($_POST['login']) && isset($_POST['password'])){
-        $user = $sql->selectWhere('usuario', 'cpf', $_POST['login'], '*');
+        $user = $sql->selectWhere('*','usuario', 'cpf', $_POST['login']);
         if($user != NULL){
             if($user['senha'] == $_POST['password']){
                 session_start();
@@ -16,7 +16,7 @@
                 $_SESSION['telefone'] = $user['telefone'];
                 $_SESSION['email'] = $user['email'];
     
-                echo "<meta http-equiv='refresh' content='0; url=central.php'>";
+                echo "<meta http-equiv='refresh' content='0; url=monitoramento.php'>";
             }
             else{
                 $util->AlertMsg("SENHA INCORRETA", 5500);

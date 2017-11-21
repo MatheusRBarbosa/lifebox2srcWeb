@@ -25,3 +25,22 @@
 .waves-blue{
 	background-color: rgb(33, 150, 243);
 }
+body{
+	background-color: #e3f2fd;
+}
+hr {
+	color: rgb(175, 184, 226);
+	background-color: rgb(175, 184, 226);
+	height: 1px;
+	max-width: 600px;
+}
+.btnAnalise{
+	position: relative;
+	left: 5%;
+}
+.margin3{
+	margin:3px;
+}
+.pcolorBox{
+	margin-left: 75px;
+}
