@@ -14,6 +14,7 @@
                             <div class="row">
                                 <?php include "../Control/analiseTitleControl.php"; ?>
                                 <?php include "../Control/linePerPageControl.php"; ?>
+                                <?php include "../Control/intervalTimeControl.php"; ?>
                             </div>
                             <div class="row">
                             <table class="centered responsive-table" style="color:white">
@@ -39,6 +40,14 @@
                                 </div>
                             </div>
                         </form>
+                        <div class="row">
+                            <div class="container center-align">
+                                <?php
+                                echo "<a href='resultadoAnalise.php?id={$_GET['id']}&r=1' class='waves-effect waves-light btn'>Aprovar</a>";
+                                echo "<a href='resultadoAnalise.php?id={$_GET['id']}&r=0' class='waves-effect waves-red btn'>Não aprovar</a>";
+                                ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

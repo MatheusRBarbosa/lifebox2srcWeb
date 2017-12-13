@@ -16,9 +16,8 @@ if(isset($_GET['boxColor']) && isset($_GET['id']) && isset($_GET['local']) && is
         $l++;
     }
 
-    $sql->IsertIdentificacao($_GET['boxColor'], $_GET['id'], $_GET['local'], $_GET['data'], $_GET['hora'], $materialBox, $_SESSION['nome'], $_SESSION['cpf'], $_SESSION['telefone']);
+    $sql->Insert("insert into identificacao (boxColor, id, local, data, hora, materiais, nome, cpf, telefone, desc_Box, identificacao_Caixa) values('{$_GET['boxColor']}', '{$_GET['id']}', '{$_GET['local']}', '{$_GET['data']}', '{$_GET['hora']}', '{$materialBox}', '{$_SESSION['nome']}', '{$_SESSION['cpf']}', '{$_SESSION['telefone']}', '{$_GET['descBox']}', '{$_GET['idBox']}')");
     echo "<meta http-equiv='refresh' content='0; url=analise.php?id={$_GET['id']}'>";
-    //echo $_SESSION['nome'];
 }
 
 ?>

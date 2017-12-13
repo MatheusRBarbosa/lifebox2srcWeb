@@ -14,7 +14,7 @@
         $signIn->setEmail($_POST["email"])&&
         $signIn->setPassword($_POST["password"],$_POST["confpassword"])){
 
-            if($sql->InsertUser($signIn->getName(),$signIn->getCpf(),$signIn->getPhone(),$signIn->getEmail(),$signIn->getPassword())){
+            if($sql->Insert("INSERT INTO usuario (nome, cpf, telefone, email, senha) VALUES ('{$signIn->getName()}', '{$signIn->getCpf()}', '{$signIn->getPhone()}', '{$signIn->getEmail()}', '{$signIn->getPassword()}')")){
                 $util->AlertMsg("Cadastro feito com sucesso", 2000);
                 echo "<meta http-equiv='refresh' content='2; url=login.php'>";
             }

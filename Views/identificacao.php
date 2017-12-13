@@ -12,7 +12,7 @@
                     <div class="card-content white-text center-align">
                         <span class="card-title">Teste de validação</span>
                         <br>
-                        <!-- Linha 0 -->
+                        <!-- Linha 1 -->
                         <div class="row">
                             <div class="col s5">
                                 <div class="input-field col s12">
@@ -26,7 +26,24 @@
                             </div>
                         </div>
                         <br>
-                        <!-- Linha 1 -->
+
+                        <!-- Linha 2 -->
+                        <div class="row">
+                            <div class="col s5">
+                                <div class="input-field">
+                                    <input id="idBox" type="text" class="validate" name="idBox">
+                                    <label for="idBox" style="color:white;">Identificação da caixa</label>
+                                </div>
+                            </div>
+                            <div class="col s5 offset-s2">
+                                <div class="input-field">
+                                    <input id="descBox" type="text" class="validate" name="descBox">
+                                    <label for="descBox" style="color:white;">Descrição da caixa</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Linha 3 -->
                         <div class="row">
                             <div class="col s5">
                                 <div class="input-field">
@@ -42,7 +59,7 @@
                             </div>
                         </div>
 
-                        <!-- Llinha 2 -->
+                        <!-- Llinha 4 -->
                         <div class="row">
                             <div class="col s5">
                                 <input type="date" class="datepicker" name="data">
@@ -56,7 +73,7 @@
                             </div>
                         </div>
 
-                        <!-- Llinha 3 -->
+                        <!-- Llinha 5 -->
                         <div class="row">
                             <div class="col s5">
                                 <input type="time" class="timepicker" name="hora">

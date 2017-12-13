@@ -12,7 +12,7 @@
 
     $sql = New MySql();
     $idUnico = array();
-    $ids = $sql->select('templog', 'id');
+    $ids = $sql->Select( "SELECT id FROM templog");
     $idUnico[] = $ids[0];
 
     for($i=1; $i<count($ids); $i++){

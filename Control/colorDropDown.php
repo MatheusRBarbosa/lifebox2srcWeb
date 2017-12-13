@@ -17,6 +17,6 @@
         echo "<option value='{$colors[$i]}'><p style=''>{$colors[$i]}</p></option>";
     }
     echo "</select>";
-    echo "<label style='color:white'>Cor da caixa</label>";
+    echo "<label style='color:white'>Cor da tarja</label>";
     
 ?>
