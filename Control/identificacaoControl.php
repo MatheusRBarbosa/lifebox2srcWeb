@@ -5,10 +5,8 @@ require_once "../Model/UtilClass.php";
 $util = new Util();
 $sql = new MySql();
 
-
+/*Codigo que salva no banco de dados toda analise que for feita*/
 if(isset($_GET['boxColor']) && isset($_GET['id']) && isset($_GET['local']) && isset($_GET['data']) && isset($_GET['hora'])){
-    /*Ele concatena apenas 'on' e 'off' nao tenho certeza se é o ideal, creio que
-    armazenar o nome do campo e não seu valor, seja muito melhor.*/
     $materialBox = "";
     $l=1;
     while(isset($_GET['box'.$l])){

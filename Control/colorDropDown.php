@@ -8,6 +8,7 @@
 </script>
 
 <?php
+/*Esse codigo serve para gerar o dropdown com as possiveis cores da caixa*/
     $colors = array("Vermelho", "Rosa", "Roxo", "Indigo", "Azul", "Ciano", "Verde", "Amarelo", "Laranja", "Marrom", "Cinza", "Preto", "Branco");
     $materialColor = array("red", "pink", "purple", "indigo", "blue", "cyan", "green", "yellow", "orange", "brown", "grey", "black", "white");
     

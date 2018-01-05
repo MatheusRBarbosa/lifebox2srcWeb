@@ -1,5 +1,5 @@
 <?php
-//Esse arquivo serve para pegar do banco as temperaturas 
+/*Esse arquivo serve para pegar do banco as temperaturas e serem enviados para o javascript*/
     require_once "../Model/MySqlClass.php";
 
     $sql = new MySql();

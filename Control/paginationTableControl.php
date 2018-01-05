@@ -114,6 +114,7 @@ if(isset($_GET['id'])){
         $next = 2;
     }
 
+    /*Botoes e setas da paginação em si*/
     if($epg != 'Tudo'){
         echo "<ul class='pagination'>";
        

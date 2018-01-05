@@ -18,7 +18,9 @@
             $num_certificado = $sql->Select("SELECT cod_identificacao FROM identificacao WHERE id = '{$id}'");
             $num_certificado = $cod_certificado.$num_certificado[0]['cod_identificacao'];
             echo "<p style='color:white'>Número de certificado: <b>{$num_certificado}<b></p>";
-            /*ESCREVER NO OUTRO BANCO*/
+
+            /*ESCREVER AS INFORMAÇOES NECESSARIAS NO BANCO ONDE ONDE CONTERÁ AS CAIXAS CADASTRADAS*/
+
         }
         else{
             echo "<span class='card-title' style='color:white'><h4>Esse teste com a caixa <b style='color:red'>NÃO</b> foi validado </h4></span>";

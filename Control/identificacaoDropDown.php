@@ -8,6 +8,7 @@
 </script>
 
 <?php
+    /*Codigo responsavel por mostrar as opções no botao dropdown de identificacao*/
     require_once "../Model/MySqlClass.php";
 
     $sql = New MySql();
@@ -15,6 +16,7 @@
     $ids = $sql->Select( "SELECT id FROM templog");
     $idUnico[] = $ids[0];
 
+    /*For para nao pegar id's repetidos*/
     for($i=1; $i<count($ids); $i++){
         $equalFlag = 1;
         for($j=0; $j<count($idUnico); $j++){

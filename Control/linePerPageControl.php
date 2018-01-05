@@ -1,4 +1,5 @@
 <?php
+    /*Codigo responsavel por exibir o botao que mostra a quantidade maxima de linha na tabela*/
     echo "<ul id='dropdown2' class='dropdown-content'>";
 
     if(isset($_GET['interval'])){

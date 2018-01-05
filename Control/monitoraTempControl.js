@@ -1,3 +1,4 @@
+/*Codigo que atualiza dinamicamente os valores na tela*/
 var varTemp = setInterval(atualizador, 1000);
 
 function atualizador(){

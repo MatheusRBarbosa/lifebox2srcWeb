@@ -1,5 +1,5 @@
 <?php
-
+    /*Codigo responsavel por exibir o botao que deternima o intervalo de tempo*/
     $intervals = array(3, 15, 30, 60, 120, 180, 240, 300);
     echo "<ul id='dropdown3' class='dropdown-content'>";
     
