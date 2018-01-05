@@ -88,6 +88,7 @@
                         </div>
 
                         <!-- Materiais -->
+                        <!--
                         <span class="card-title">Materiais utilizados</span>
                         <br>
                         <div class="row">
@@ -130,6 +131,7 @@
                             </div>
                         </div>
 
+                        -->
                         <div class="card-action center-align">
                             <button type="submit" class="waves-effect waves-light waves-blue btn">Iniciar análise de validação</button>
                         </div>
